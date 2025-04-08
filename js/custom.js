@@ -97,9 +97,12 @@ $(function(){
   $(function(){
     jQuery(document).ready(function() {
     $('#home').backstretch([
-       "images/home-bg-slideshow1.jpg",
-       "images/home-bg-slideshow2.jpg",
-        ],  {duration: 2000, fade: 750});
+      "images/nobreaks-6.jpg",
+      "images/nobreaks-4.png",
+      "images/nobreaks-1.png",
+      "images/nobreaks-2.jpeg",
+      "images/nobreaks-5.jpg",
+      ],  {duration: 3000, fade: 1000});
     });
   })
 

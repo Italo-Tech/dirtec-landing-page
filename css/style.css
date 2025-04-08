@@ -45,7 +45,7 @@ hr {
 }
 
 .section-title strong {
-    color: #00C6D7;
+    color: #e03232;
     font-size: 56px;
 }
 
@@ -113,7 +113,7 @@ PRELOADER
     margin: 0 auto;
     width: 20%;
     height: 20%;
-    background-color: #00c6d7;
+    background-color: #e03232;
     border-radius: 100%;
     -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out;
     animation: sk-circleBounceDelay 1.2s infinite ease-in-out;
@@ -266,13 +266,13 @@ NAVIGATION
 }
 
 .custom-navbar .navbar-brand {
-    color: #00c6d7;
+    color: #e03232;
     font-weight: 600;
     font-size: 24px;
 }
 
 .custom-navbar .navbar-brand .navbar-toggle {
-    background: #00c6d7;
+    background: #e03232;
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
@@ -282,21 +282,27 @@ NAVIGATION
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
+    transition: color 0.4s ease;
 }
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #eeeeee;
+    color: #e03232;
+    border-bottom: 2px solid #e03232;
+    border-top: 2px solid #e03232;
 }
 
 .custom-navbar .nav > li > a:focus {
     background-color: transparent;
     color: #ffffff;
     outline: none;
+    transition-duration: 2s;
 }
 
 .custom-navbar .nav li.active > a {
-    color: #00c6d7;
+    color: #e03232;
+    border-bottom: 2px solid #e03232;
+    border-top: 2px solid #e03232;
 }
 
 .custom-navbar .navbar-toggle {
@@ -305,7 +311,7 @@ NAVIGATION
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #00c6d7;
+    background: #e03232;
     border-color: transparent;
 }
 
@@ -318,8 +324,8 @@ NAVIGATION
     }
 
     .custom-navbar.top-nav-collapse {
-        padding: 8px;
-        background: #4B4B4B;
+        padding: 20px;
+        background: #000;
     }
 }
 
@@ -368,12 +374,12 @@ HOME
 }
 
 #home .btn:hover {
-    background: #00c6d7;
+    background: #e03232;
     border-color: transparent;
 }
 
 #home .btn-danger {
-    background: #00c6d7;
+    background: #e03232;
     border-color: transparent;
 }
 
@@ -441,7 +447,7 @@ ABOUT
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    color: #00c6d7;
+    color: #e03232;
     cursor: default;
     background-color: transparent;
     border: 1px solid transparent;
@@ -469,7 +475,7 @@ TEAM
 }
 
 #team h3 {
-    color: #00c6d7;
+    color: #e03232;
     font-size: 14px;
     font-weight: bold;
 }
@@ -527,7 +533,7 @@ TEAM
 }
 
 #team .social-icon li a:hover {
-    color: #00c6d7;
+    color: #e03232;
 }
 
 /* ==========================================================================
@@ -581,7 +587,7 @@ PORTFOLIO
 .filter-wrapper li .selected,
 .filter-wrapper li a:focus,
 .filter-wrapper li a:hover {
-    color: #00c6d7;
+    color: #e03232;
     outline: none;
 }
 
@@ -691,7 +697,7 @@ PRICING
 }
 
 #pricing .plan-one .btn {
-    background-color: #00c6d7;
+    background-color: #e03232;
 }
 
 #pricing .plan-two .btn {
@@ -754,8 +760,8 @@ CONTACT
 }
 
 #contact input[type="submit"] {
-    background: #00c6d7;
-    border: 3px solid #00c6d7;
+    background: #e03232;
+    border: 3px solid #e03232;
     letter-spacing: 1px;
     margin-top: 18px;
     height: 50px;
@@ -804,7 +810,7 @@ footer p {
 }
 
 .social-icon li a:hover {
-    color: #00c6d7;
+    color: #e03232;
 }
 
 @media screen and (min-width: 992px) {
@@ -815,6 +821,13 @@ footer p {
         }
     }
 }
+
+.backstretch img {
+    filter: blur(4px) brightness(0.6);
+    transform: scale(1.05);
+    transition: filter 0.5s ease;
+}
+
 
 /* ==========================================================================
 media quires for mobile

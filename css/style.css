@@ -829,6 +829,26 @@ footer p {
 }
 
 
+.element-icon {
+    fill: #e03232;
+    transition: all .3s;
+    height: 3.5em;
+    width: 3.5em;
+}
+
+.title-about {
+    color: #e03232;
+}
+
+.fixed-height {
+    height: 37rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.fixed-height:hover {
+    border-bottom: 3px solid #e03232;
+}
+
 /* ==========================================================================
 media quires for mobile
 ========================================================================== */
@@ -844,5 +864,14 @@ media quires for mobile
 
     #home h3 {
         font-size: 12px;
+    }
+    .img-person {
+        position: hidden;
+        background: red;
+    }
+}
+@media (max-width: 1200px) {
+    .img-person {
+        visibility: hidden;
     }
 }

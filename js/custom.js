@@ -97,10 +97,10 @@ $(function(){
   $(function(){
     jQuery(document).ready(function() {
     $('#home').backstretch([
+      "images/nobreaks-2.png",
       "images/nobreaks-6.jpg",
       "images/nobreaks-4.png",
       "images/nobreaks-1.png",
-      "images/nobreaks-2.jpeg",
       "images/nobreaks-5.jpg",
       ],  {duration: 3000, fade: 1000});
     });

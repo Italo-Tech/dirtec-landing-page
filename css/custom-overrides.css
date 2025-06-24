@@ -1,0 +1,249 @@
+/* Botão de WhatsApp flutuante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366; /* Cor do WhatsApp */
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float i {
+    line-height: 1;
+}
+
+/* Adiciona uma pequena animação pulsante */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(1.1);
+    }
+    20% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.whatsapp-float {
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    animation: none;
+}
+
+/* Estilos para o mapa na seção de contato */
+.map-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    display: block;
+}
+
+.map-button-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.map-button-container .btn {
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.map-button-container .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes para a seção de contato */
+#contact .contact-info {
+    margin-bottom: 30px;
+}
+
+#contact .contact-info h3 {
+    margin-top: 25px;
+}
+
+#contact .fa-location-dot {
+    color: #e03232;
+}
+
+@media (max-width: 768px) {
+    #contact .contact-info, 
+    #contact .map-container {
+        margin-bottom: 30px;
+    }
+}
+
+/* Estilos para a seção de parcerias */
+#parcerias {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+#parcerias .row {
+    margin-bottom: 30px;
+}
+
+.parceria-texto {
+    padding: 20px;
+    height: 100%;
+}
+
+.parceria-texto h2 {
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 28px;
+}
+
+.parceria-texto h2:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #e03232;
+    margin-top: 10px;
+}
+
+.parceria-texto p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+    font-size: 16px;
+}
+
+.parceria-lista {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.parceria-lista li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 28px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.parceria-lista li i {
+    color: #e03232;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.parceria-imagem {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.parceria-imagem img {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+}
+
+.parceria-imagem img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#parcerias .btn {
+    background: #e03232;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#parcerias .btn:hover {
+    background: #c72020;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 991px) {
+    .parceria-texto, .parceria-imagem {
+        padding: 15px;
+    }
+    
+    #parcerias {
+        padding: 70px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .parceria-texto, .parceria-imagem {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .parceria-texto h2:after {
+        margin: 10px auto 0;
+    }
+    
+    .parceria-lista {
+        max-width: 80%;
+        margin: 0 auto 30px;
+    }
+    
+    .parceria-lista li {
+        text-align: left;
+    }
+    
+    .parceria-imagem {
+        margin-top: 20px;
+    }
+    
+    #parcerias {
+        padding: 50px 0;
+    }
+    
+    #parcerias .btn {
+        margin-bottom: 20px;
+    }
+}

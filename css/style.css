@@ -555,7 +555,7 @@ PORTFOLIO
 
 .iso-box {
     position: relative;
-    min-height: 50px;
+    min-height: 100px;
     float: left;
     overflow: hidden;
     margin-bottom: 20px;
@@ -646,8 +646,6 @@ FOOTER
 ========================================================================== */
 footer {
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 footer p {
@@ -742,4 +740,137 @@ media quires for mobile
     .img-person {
         visibility: hidden;
     }
+}
+
+.portfolio-thumb {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+.portfolio-thumb:hover {
+  transform: scale(1.08);
+}
+
+/* Footer Info Styles */
+.footer-info {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 0;
+  background: #011c3a;
+  border-radius: 0;
+  padding: 40px 0;
+  color: #fff;
+  font-size: 1.08em;
+  box-shadow: none;
+  text-align: left;
+}
+
+.footer-info-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+}
+
+.footer-column {
+  margin-bottom: 16px;
+}
+
+.footer-column-title {
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Specifications Section Styles */
+.specifications-section {
+  background: #011c3a;
+  color: white;
+  padding: 150px 30px 100px 100px;
+  overflow: hidden;
+}
+
+.specifications-container {
+  display: flex;
+  position: relative;
+}
+
+.specifications-content {
+  width: 50%;
+  z-index: 2;
+}
+
+.specifications-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.specifications-image img {
+  width: 55rem;
+}
+
+/* Responsive tabs for mobile */
+.responsive-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #606060;
+}
+
+@media (max-width: 767px) {
+  .specifications-section {
+    padding: 100px 20px 60px 20px;
+    overflow-x: hidden;
+  }
+
+  .specifications-container {
+    flex-direction: column;
+  }
+
+  .specifications-content {
+    width: 100%;
+  }
+
+  .specifications-image {
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .responsive-tabs {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .responsive-tabs > li {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .nav-tabs > li > a {
+    padding: 12px 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 4px;
+  }
+
+  .nav-tabs > li.active > a {
+    border-color: #e03232;
+    background-color: rgba(224, 50, 50, 0.1);
+  }
 }

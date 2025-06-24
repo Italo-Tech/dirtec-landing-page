@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/nivo-lightbox.css">
 	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom-overrides.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -55,6 +56,7 @@
 					<li><a href="#work" class="smoothScroll">SERVIÇO</a></li>
 					<li><a href="#specifications" class="smoothScroll">ESPECIFICAÇÕES</a></li>
 					<li><a href="#portfolio" class="smoothScroll">PORTFOLIO</a></li>
+					<li><a href="#parcerias" class="smoothScroll">PARCERIAS</a></li>
 					<li><a href="#contact" class="smoothScroll">CONTATO</a></li>
 				</ul>
 			</div>
@@ -188,13 +190,13 @@
 	</section>
 
 	<!-- ABOUT -->
-	<section id="specifications" style="background: #011c3a;  padding: 150px 0 100px 100px; color: white;">
-		<div style="display: flex; position: relative;">
-			<div class="col-md-6 col-sm-12">
+	<section id="specifications" class="specifications-section">
+		<div class="specifications-container">
+			<div class="specifications-content">
 				<h3 class="bold">Especificações</h3>
 				<h1 class="heading bold">Benefícios de realizar os nossos serviços</h1>
 				<!-- Nav tabs -->
-				<ul class="nav nav-tabs" role="tablist">
+				<ul class="nav nav-tabs responsive-tabs" role="tablist">
 					<li class="active"><a href="#corrective" aria-controls="design" role="tab" data-toggle="tab">CORRETIVA</a></li>
 					<li><a href="#preventive" aria-controls="mobile" role="tab" data-toggle="tab">PREVENTIVA</a></li>
 					<li><a href="#activation" aria-controls="mobile" role="tab" data-toggle="tab">ATIVAÇÃO</a></li>
@@ -222,8 +224,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="" style="position: absolute; right: 0; bottom: 0;">
-				<img src="images/person-1.png" class="img-responsive img-person" alt="about img" style="width: 55rem;">
+			<div class="specifications-image">
+				<img src="images/person-1.png" class="img-responsive img-person" alt="about img">
 			</div>
 		</div>
 	</section>
@@ -241,46 +243,106 @@
 					<div class="iso-section">
 						<ul class="filter-wrapper clearfix">
 							<li><a href="#" data-filter="*" class="selected opc-main-bg">Todos</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".html">HTML</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".photoshop">Photoshop</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".wordpress">Wordpress</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".mobile">Mobile</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".medicao">Medição de Carga</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".bancada-antes">Bancada Antes</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".bancada-depois">Bancada Depois</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".potencia-antes">Potência Antes</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".potencia-depois">Potência Depois</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".banco-baterias-antes">Banco Baterias Antes</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".banco-baterias-depois">Banco Baterias Depois</a></li>
 						</ul>
 						<div class="iso-box-section wow fadeIn" data-wow-delay="0.9s">
 							<div class="iso-box-wrapper col4-iso-box">
-
-								<div class="iso-box html wordpress mobile col-lg-4 col-md-4 col-sm-6">
-									<a href="images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img1.jpg" alt="portfolio img"></a>
+								<!-- Medição de Carga -->
+								<div class="iso-box medicao col-lg-3 col-md-3 col-sm-4 col-xs-6">
+									<a href="images/medicao/img1.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/medicao/img1.jpg" alt="medicao"></a>
 								</div>
-
-								<div class="iso-box wordpress col-lg-4 col-md-4 col-sm-6">
-									<a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img2.jpg" alt="portfolio img"></a>
+								<div class="iso-box medicao col-lg-3 col-md-3 col-sm-4 col-xs-6">
+									<a href="images/medicao/img2.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/medicao/img2.jpg" alt="medicao"></a>
 								</div>
-
-								<div class="iso-box html mobile col-lg-4 col-md-4 col-sm-6">
-									<a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img3.jpg" alt="portfolio img"></a>
+								<div class="iso-box medicao col-lg-3 col-md-3 col-sm-4 col-xs-6">
+									<a href="images/medicao/img3.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/medicao/img3.jpg" alt="medicao"></a>
 								</div>
-
-								<div class="iso-box wordpress col-lg-4 col-md-4 col-sm-6">
-									<a href="images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img4.jpg" alt="portfolio img"></a>
-								</div>
-
-								<div class="iso-box html photoshop col-lg-4 col-md-4 col-sm-6">
-									<a href="images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img5.jpg" alt="portfolio img"></a>
-								</div>
-
-								<div class="iso-box photoshop col-lg-4 col-md-4 col-sm-6">
-									<a href="images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/portfolio-img6.jpg" alt="portfolio img"></a>
-								</div>
-
+								<!-- Banco de Baterias - Antes -->
+								<div class="iso-box banco-baterias-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/banco-baterias/antes/img1.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/banco-baterias/antes/img1.jpg" alt="banco baterias antes"></a></div>
+								<div class="iso-box banco-baterias-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/banco-baterias/antes/img2.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/banco-baterias/antes/img2.jpg" alt="banco baterias antes"></a></div>
+								<div class="iso-box banco-baterias-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/banco-baterias/antes/img3.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/banco-baterias/antes/img3.jpg" alt="banco baterias antes"></a></div>
+								<div class="iso-box banco-baterias-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/banco-baterias/antes/img4.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/banco-baterias/antes/img4.jpg" alt="banco baterias antes"></a></div>
+								<!-- Banco de Baterias - Depois -->
+								<div class="iso-box banco-baterias-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/banco-baterias/depois/img1.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/banco-baterias/depois/img1.jpg" alt="banco baterias depois"></a></div>
+								<div class="iso-box banco-baterias-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/banco-baterias/depois/img2.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/banco-baterias/depois/img2.jpg" alt="banco baterias depois"></a></div>
+								<div class="iso-box banco-baterias-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/banco-baterias/depois/img3.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/banco-baterias/depois/img3.jpg" alt="banco baterias depois"></a></div>
+								<div class="iso-box banco-baterias-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/banco-baterias/depois/img4.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/banco-baterias/depois/img4.jpg" alt="banco baterias depois"></a></div>
+								<!-- Preventiva Bancada - Antes -->
+								<div class="iso-box bancada-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/antes/img1.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/antes/img1.jpg" alt="bancada antes"></a></div>
+								<div class="iso-box bancada-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/antes/img2.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/antes/img2.jpg" alt="bancada antes"></a></div>
+								<div class="iso-box bancada-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/antes/img3.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/antes/img3.jpg" alt="bancada antes"></a></div>
+								<div class="iso-box bancada-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/antes/img4.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/antes/img4.jpg" alt="bancada antes"></a></div>
+								<div class="iso-box bancada-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/antes/img5.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/antes/img5.jpg" alt="bancada antes"></a></div>
+								<div class="iso-box bancada-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/antes/img6.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/antes/img6.jpg" alt="bancada antes"></a></div>
+								<div class="iso-box bancada-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/antes/img7.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/antes/img7.jpg" alt="bancada antes"></a></div>
+								<div class="iso-box bancada-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/antes/img8.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/antes/img8.jpg" alt="bancada antes"></a></div>
+								<div class="iso-box bancada-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/antes/img9.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/antes/img9.jpg" alt="bancada antes"></a></div>
+								<!-- Preventiva Bancada - Depois -->
+								<div class="iso-box bancada-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/depois/img1.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/depois/img1.jpg" alt="bancada depois"></a></div>
+								<div class="iso-box bancada-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/depois/img2.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/depois/img2.jpg" alt="bancada depois"></a></div>
+								<div class="iso-box bancada-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/depois/img3.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/depois/img3.jpg" alt="bancada depois"></a></div>
+								<div class="iso-box bancada-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/depois/img4.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/depois/img4.jpg" alt="bancada depois"></a></div>
+								<div class="iso-box bancada-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-bancada/depois/img5.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-bancada/depois/img5.jpg" alt="bancada depois"></a></div>
+								<div class="iso-box potencia-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-potencia/antes/img1.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-potencia/antes/img1.jpg" alt="potencia antes"></a></div>
+								<div class="iso-box potencia-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-potencia/antes/img2.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-potencia/antes/img2.jpg" alt="potencia antes"></a></div>
+								<div class="iso-box potencia-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-potencia/antes/img3.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-potencia/antes/img3.jpg" alt="potencia antes"></a></div>
+								<div class="iso-box potencia-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-potencia/antes/img4.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-potencia/antes/img4.jpg" alt="potencia antes"></a></div>
+								<div class="iso-box potencia-antes col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-potencia/antes/img5.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-potencia/antes/img5.jpg" alt="potencia antes"></a></div>
+								<!-- Preventiva Potência - Depois -->
+								<div class="iso-box potencia-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-potencia/depois/img1.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-potencia/depois/img1.jpg" alt="potencia depois"></a></div>
+								<div class="iso-box potencia-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-potencia/depois/img2.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-potencia/depois/img2.jpg" alt="potencia depois"></a></div>
+								<div class="iso-box potencia-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-potencia/depois/img3.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-potencia/depois/img3.jpg" alt="potencia depois"></a></div>
+								<div class="iso-box potencia-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-potencia/depois/img4.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-potencia/depois/img4.jpg" alt="potencia depois"></a></div>
+								<div class="iso-box potencia-depois col-lg-3 col-md-3 col-sm-4 col-xs-6"><a href="images/preventiva-potencia/depois/img5.jpg" data-lightbox-gallery="portfolio-gallery"><img class="portfolio-thumb" src="images/preventiva-potencia/depois/img5.jpg" alt="potencia depois"></a></div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- PARCERIAS -->
+	<section id="parcerias">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="section-title text-center">
+						<h1 class="heading bold">NOSSAS PARCERIAS</h1>
+						<hr>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-7 col-sm-12">
+					<div class="parceria-texto wow fadeInLeft" data-wow-delay="0.3s">
+						<h2 class="bold">Maxi Impressoras</h2>
+						<p>Orgulhosamente estabelecemos uma parceria estratégica com a <strong>Maxi Impressoras</strong>, uma empresa reconhecida no mercado de soluções para impressão e digitalização de documentos.</p>
+						<p>Nossa colaboração permite oferecer aos clientes soluções completas que integram:</p>
+						<ul class="parceria-lista">
+							<li><i class="fa-solid fa-circle-check"></i> Fornecimento de energia ininterrupta para equipamentos de impressão</li>
+							<li><i class="fa-solid fa-circle-check"></i> Proteção contra oscilações de energia para impressoras de alto valor</li>
+							<li><i class="fa-solid fa-circle-check"></i> Manutenção preventiva integrada de nobreaks e sistemas de impressão</li>
+							<li><i class="fa-solid fa-circle-check"></i> Suporte técnico especializado para infraestrutura completa</li>
+						</ul>
+						<p>Esta parceria nos permite entregar um atendimento completo, garantindo a continuidade operacional e a proteção dos investimentos em tecnologia de nossos clientes.</p>
+					</div>
+				</div>
+				<div class="col-md-5 col-sm-12">
+					<div class="parceria-imagem wow fadeInRight" data-wow-delay="0.6s">
+						<img src="images/maxi-impressoras-2.jpeg" class="img-responsive" alt="Maxi Impressoras">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!-- CONTACT -->
 	<section id="contact">
@@ -294,31 +356,30 @@
 				</div>
 				<div class="col-md-6 col-sm-12 contact-info">
 					<h2 class="heading bold">INFORMAÇÕES DE CONTATO</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur assumenda atque beatae blanditiis commodi cum delectus dicta distinctio est facilis incidunt iure maxime odio possimus quis rem, repellendus ullam</p>
+					<p>Entre em contato conosco para saber mais sobre nossos serviços de manutenção, instalação e assistência técnica para no-breaks e estabilizadores.</p>
 					<div class="col-md-6 col-sm-4">
 						<h3><i class="fa-solid fa-envelope wow fadeIn wow bounceIn" data-wow-delay="0.6s"></i> EMAIL</h3>
-						<p>hello@company.com</p>
+						<p>contato@dirtec.net.br</p>
 					</div>
 					<div class="col-md-6 col-sm-4">
 						<h3><i class="fa-solid fa-phone fadeIn wow bounceIn" data-wow-delay="0.6s"></i> TELEFONE</h3>
-						<p>(11) 91234-1234 | (11) 91234-1234</p>
+						<p>(41) 99197-9567<br>(41) 99231-7070</p>
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<h3><i class="fa-solid fa-location-dot fadeIn wow bounceIn" data-wow-delay="0.6s"></i> ENDEREÇO</h3>
+						<p>Rua Bengali 483, São Braz<br>Curitiba, PR - CEP: 82105-450</p>
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12">
-					<form action="#" method="get" class="wow fadeInUp" data-wow-delay="0.6s">
-						<div class="col-md-6 col-sm-6">
-							<input type="text" class="form-control" placeholder="Nome" name="name">
+					<div class="map-container wow fadeInUp" data-wow-delay="0.6s">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.244018268257!2d-49.333621224391036!3d-25.411853177557634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce43129c7fed5%3A0x7983663352e6146!2sR.%20Bengali%2C%20483%20-%20S%C3%A3o%20Braz%2C%20Curitiba%20-%20PR%2C%2082105-450!5e0!3m2!1spt-BR!2sbr!4v1719274339494!5m2!1spt-BR!2sbr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+						<div class="map-button-container">
+							<a href="https://maps.google.com/?q=Rua+Bengali+483,+São+Braz,+Curitiba,+PR" target="_blank" class="btn btn-default">
+								<i class="fa-solid fa-location-arrow"></i> Ver no Google Maps
+							</a>
 						</div>
-						<div class="col-md-6 col-sm-6">
-							<input type="email" class="form-control" placeholder="Email" name="email">
-						</div>
-						<div class="col-md-12 col-sm-12">
-							<textarea class="form-control" placeholder="Mensagem" rows="7" name="message"></textarea>
-						</div>
-						<div class="col-md-offset-4 col-md-8 col-sm-offset-4 col-sm-8">
-							<input type="submit" class="form-control" value="ENVIAR MENSAGEM">
-						</div>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -329,20 +390,64 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12">
+					<div class="footer-info">
+						<div class="footer-info-container">
+							<div class="footer-columns">
+								<div class="footer-column">
+									<span class="footer-column-title">Endereço:</span>
+									Rua Bengali 483, São Braz, Curitiba, PR<br>
+									CEP: 82105-450
+								</div>
+								<div class="footer-column">
+									<span class="footer-column-title">CNPJ:</span>
+									47.287.484/0001-64
+								</div>
+								<div class="footer-column">
+									<span class="footer-column-title">Celular:</span>
+									(41) 99262-301<br>(41) 98409-4057
+								</div>
+								<div class="footer-column">
+									<span class="footer-column-title">Contato para agendamento:</span>
+									Erik: (41) 99197-9567<br>(41) 99231-7070
+								</div>
+								<div class="footer-column">
+									<span class="footer-column-title">Atendimento:</span>
+									24 horas
+								</div>
+								<div class="footer-column">
+									<span class="footer-column-title">E-mail:</span>
+									contato@dirtec.net.br<br>
+									tecnicocuritiba@hotmail.com
+								</div>
+								<div class="footer-column">
+									<span class="footer-column-title">Tipos de serviço:</span>
+									Locação, venda de peças, serviço de elétrica, contratos de manutenção
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+
 					<span>Todos os direitos reservados</span>
 					<hr>
-					<ul class="social-icon">
+					<!-- <ul class="social-icon">
 						<li><a href="#" class="fa-brands fa-facebook-f wow fadeIn" data-wow-delay="0.3s"></a></li>
 						<li><a href="#" class="fa-brands fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
 						<li><a href="#" class="fa-brands fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
 						<li><a href="#" class="fa-brands fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
 						<li><a href="#" class="fa-brands fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 		</div>
 	</footer>
 
+
+	<!-- WhatsApp botão flutuante -->
+	<a href="https://wa.me/5511984111337" target="_blank" class="whatsapp-float" title="Fale conosco pelo WhatsApp">
+		<i class="fa-brands fa-whatsapp"></i>
+	</a>
 
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>

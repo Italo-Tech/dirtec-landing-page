@@ -261,8 +261,9 @@ PRELOADER
 NAVIGATION
 ========================================================================== */
 .custom-navbar {
-    background: #4B4B4B;
+    background: #011c3a;
     margin-bottom: 0;
+    padding: 20px 0
 }
 
 .custom-navbar .navbar-brand {
@@ -317,7 +318,7 @@ NAVIGATION
 
 @media (min-width: 768px) {
     .custom-navbar {
-        background: #4B4B4B;
+        background: #011c3a;
         padding: 10px;
         border-bottom: 0;
         background: 0 0;
